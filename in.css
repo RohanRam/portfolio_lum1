@@ -1,0 +1,428 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    --maincolor: orangered;
+    /* --maincolor: rgb(66, 249, 25);
+    --maincolor: rgb(224, 231, 17);
+    --maincolor: rgba(104, 16, 236, 0.642); */
+    
+
+}
+
+#container
+{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+
+#logo
+{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+#logo:hover
+{
+    color: var(--maincolor);
+    animation: shaking 0.1s 6;
+    
+}
+
+
+nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+    /* background-color: whitesmoke; */
+}
+.l-item
+{
+    display: inline;
+    margin: 0 40px;
+    font-family: "PT Mono", monospace;
+}
+
+.links
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+
+}
+.links:hover
+{
+    /* color: orangered; */
+    color: var(--maincolor);
+    transition: 0.3s ease-in-out;
+    text-decoration: underline;
+    /* text-shadow: 0 0 50px rgb(0, 0, 0); */
+}
+
+
+#uname{
+    /* font-family: "Dancing Script", cursive; */
+    font-family: "Satisfy", cursive;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+#lname
+{
+    font-family: "Satisfy", cursive;
+    font-size: 60px;
+    margin-bottom: 10px;
+    color: var(--maincolor);
+    /* color: rgb(22, 123, 15); */
+}
+
+.home-content
+{
+    margin: 13% 0 0 15%;
+}
+#udetails
+{
+    font-size: 20px;
+    font-family: "PT Mono", monospace;
+    line-height: 1.3;
+    margin-bottom: 60px;
+}
+.dwnld
+{
+    background-color: black;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.dwnld:hover
+{
+    background-color: var(--maincolor);
+    transition: 0.3s ease-in-out;
+
+}
+
+
+
+
+.home-img
+{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 10%;
+    right: 30px;
+}
+
+#car
+{
+    height: 150px;
+    left: -45%;
+}
+#stop
+{
+    bottom: 40px;
+}
+
+.home-img:hover #stop
+{
+    bottom: 0;
+}
+.home-img:hover #car
+{
+    left: 40%;
+}
+
+
+.g1
+{
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 1.5s,left 1s;
+}
+#about
+{
+    margin: 18% 8% 0% 8%;
+}
+.section-head
+{
+    text-align: center;
+}
+.main-head
+
+{
+     font-family: "Dancing Script", cursive;
+     font-size: 50px;
+}
+.sub-head
+{
+    color: var(--maincolor);
+    /* font-family: Georgia, 'Times New Roman', Times, serif; */
+    /* font-family: "Josefin Sans", sans-serif; */
+    font-family: "Sankofa Display", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+#hr
+{
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--maincolor);
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+
+.about-body
+{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.about-img>img
+{
+    height: 500px;
+    margin: 10%;
+}
+.about-content
+{
+    font-size: 20px;
+    font-family: "PT Mono", monospace;
+    line-height: 1.3;
+    text-align: justify;
+    padding: 30px;
+    margin-left: 10%;
+}
+#bca
+{
+   
+    color: var(--maincolor);
+    font-family: "Dancing Script", cursive;
+    font-weight: bolder;
+    font-size: xx-large;
+}
+.information
+{
+    margin-top: 10px;
+}
+.info-box
+{
+    display: flex;
+    align-items: center;
+    line-height: 2.5;
+    margin-left: 10%;
+    font-family: "Dancing Script";
+
+}
+
+.info-box>span
+{
+margin-left: 20px;
+/* color: var(--maincolor); */
+}
+
+#icn
+{
+    color: var(--maincolor);
+}
+#skills
+{
+    margin: 13% 8% 0 8%;
+  
+}
+
+#simg
+{
+ 
+    width: 100%;
+}
+
+.skill-content
+{
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns:repeat(2,1fr);
+    gap: 4rem;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0px;
+    position: relative;
+}
+
+.bar-head, .bar-pcnt
+{
+    font-size: 1.5rem;
+    font-weight: 500;
+    
+    
+}
+.bar-head
+{
+font-family: "PT Mono", monospace;
+}
+
+.bar-pcnt
+{
+    font-family: "Sankofa Display", sans-serif;
+    font-weight: bold;
+   
+}
+
+.base-bar
+{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+
+.html-bar
+{
+    width: 93%;
+    background-color: var(--maincolor);
+}
+
+.py-bar
+{
+    width: 90%;
+    background-color: var(--maincolor);
+}
+
+.css-bar
+{
+    width: 85%;
+    background-color: var(--maincolor);
+}
+
+.js-bar
+{
+    width: 80%;
+    background-color: var(--maincolor);
+}
+
+.iclr
+{
+    color: black;
+   
+}
+/* .iclr:hover
+{
+    
+    color: black;
+} */
+
+#contact
+{
+    margin: 8%;
+}
+
+.icons-grp
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.icon
+{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    margin: 0px 10px;
+    margin: 3rem 1.5rem 3rem 0;
+    border-radius: 50%;
+    border: 2px solid orangered;
+    background: transparent;
+    font-size: 1.7rem;
+   
+    color: orangered;
+    
+    transition: 0.3s ease-in-out;
+
+}
+
+.icon:hover
+{
+    
+
+    color: white;
+    transform: scale(1.3)translateY(-10px);
+    box-shadow: 0 0 25px orangered;
+    background-color:orangered;
+    /* animation: shaking 0.1s 2; */
+
+}
+
+@keyframes shaking
+ {
+   0% {transform: rotate(0deg);}
+   20% {transform: rotate(-8deg);}
+   50% {transform: rotate(0deg);}
+   70% {transform: rotate(8deg);}
+   100% {transform: rotate(0deg);}
+ }
+
+ #copyrt
+ {
+    font-size: 15px;
+    font-family: "PT Mono", monospace;
+    text-align: center;
+    font-weight: bolder;
+ }
+ .ft
+ {
+    float: right;
+    margin: -40px 30px 30px 0px;
+ }
+ .ft:hover
+ {
+    color: white;
+    box-shadow: 0 0 25px orangered;
+    background-color:orangered;
+    animation: shaking 0.1s infinite;
+    
+
+ }
+ html
+ {
+    scroll-behavior: smooth;
+ }
+
+ ::-webkit-scrollbar
+ {
+    width: 10px;
+    border-radius: 10px;
+
+ }
+::-webkit-scrollbar-track
+{
+    background-color: whitesmoke;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background-color: orangered;
+    border-radius: 10px;
+}
